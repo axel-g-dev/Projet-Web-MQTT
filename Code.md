@@ -75,10 +75,7 @@ services:
   db:
     image: mysql:8.0
     environment:
-      MYSQL_ROOT_PASSWORD: rootpass
-      MYSQL_DATABASE: mydb
-      MYSQL_USER: user
-      MYSQL_PASSWORD: pass
+      MYSQL_ROOT_PASSWORD: ciel12000
     volumes:
       - mysql_data:/var/lib/mysql
 
@@ -93,8 +90,8 @@ services:
     image: phpmyadmin/phpmyadmin
     environment:
       PMA_HOST: db
-      PMA_USER: user
-      PMA_PASSWORD: pass
+      PMA_USER: root
+      PMA_PASSWORD: ciel12000
     ports:
       - "8081:80"
     depends_on:
@@ -102,6 +99,7 @@ services:
 
 volumes:
   mysql_data:
+
 ```
 
 -----

@@ -104,8 +104,6 @@ volumes:
 
 -----
 
-### IV. Prochaine Étape
+ensuite 
+'''docker compose up -d'''
 
-La structure est définie pour trois conteneurs (MySQL, PHP/Apache, phpMyAdmin).
-
-Voulez-vous la commande pour démarrer les services définis dans le fichier `docker-compose.yml` ?

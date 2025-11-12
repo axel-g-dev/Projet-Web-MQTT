@@ -48,6 +48,16 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 docker --version
 ```
 
+**Création du dossier :**
+```bash
+mkdir docker-web
+```
+puis entrez dans ce dossier, 
+
+```bash
+cd docker-web
+```
+
 ## 3\. Configuration des services
 
 Créez le fichier `docker-compose.yml`.

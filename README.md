@@ -1,5 +1,3 @@
-Voici une réécriture propre et directe de ta documentation, structurée étape par étape. J'ai corrigé la syntaxe des commandes système pour qu'elles soient fonctionnelles.
-
 # Documentation technique : Installation et Configuration
 
 ## 1\. Préparation du système (Proxmox CT)

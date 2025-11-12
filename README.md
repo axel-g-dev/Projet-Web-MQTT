@@ -71,7 +71,7 @@ services:
       - "3306:3306"
 
   php:
-    build: .
+    build: .  
     volumes:
       - ./:/var/www/html
     ports:

@@ -76,15 +76,20 @@ services:
     image: mysql:8.0
     environment:
       MYSQL_ROOT_PASSWORD: ciel12000
+      MYSQL_DATABASE: surveillanceEauCanal
     volumes:
       - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
 
   php:
-    image: php:8.2-apache
+    build: .  
     volumes:
       - ./:/var/www/html
     ports:
       - "8080:80"
+    depends_on:
+      - db
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -101,11 +106,32 @@ volumes:
   mysql_data:
 
 ```
+puis créez un dockerfile :
+
+'''nano Dockerfile'''
+
+collez : 
+
+'''FROM php:8.2-apache
+
+# Installation des extensions MySQL/PDO
+RUN docker-php-ext-install pdo pdo_mysql mysqli
+
+# Activation du module Apache rewrite (bonus)
+RUN a2enmod rewrite
+
+# Configuration des permissions
+RUN chown -R www-data:www-data /var/www/html
+'''
 
 -----
 
 ensuite 
-'''docker compose up -d'''
+
+'''docker-compose build'''
+
+# Relancez
+'''docker-compose up -d'''
 
 Puis allez sur votre navigateur 
 

@@ -107,3 +107,58 @@ volumes:
 ensuite 
 '''docker compose up -d'''
 
+Puis allez sur votre navigateur 
+
+http://ip_vm:8081
+
+Dans phpmyadmin entrez :
+'''
+-- --------------------------------------------------------
+-- 1. CRÉATION DE LA BASE
+-- --------------------------------------------------------
+CREATE DATABASE IF NOT EXISTS `surveillanceEauCanal`;
+USE `surveillanceEauCanal`;
+
+-- --------------------------------------------------------
+-- 2. CRÉATION DE LA TABLE "1"
+-- --------------------------------------------------------
+DROP TABLE IF EXISTS `1`; -- On la supprime si elle existe pour repartir à neuf
+CREATE TABLE `1` (
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
+    `hauteurEau` DECIMAL(5,2) NOT NULL,
+    `temperatureEau` DECIMAL(5,2) NOT NULL,
+    `date_heure` DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+-- --------------------------------------------------------
+-- 3. INSERTION DE 25 LIGNES DE DONNÉES
+-- --------------------------------------------------------
+INSERT INTO `1` (`hauteurEau`, `temperatureEau`, `date_heure`) VALUES
+(1.50, 14.2, NOW() - INTERVAL 24 HOUR),
+(1.52, 14.3, NOW() - INTERVAL 23 HOUR),
+(1.48, 14.1, NOW() - INTERVAL 22 HOUR),
+(1.55, 14.5, NOW() - INTERVAL 21 HOUR),
+(1.60, 14.8, NOW() - INTERVAL 20 HOUR),
+(1.58, 14.7, NOW() - INTERVAL 19 HOUR),
+(1.45, 14.0, NOW() - INTERVAL 18 HOUR),
+(1.42, 13.9, NOW() - INTERVAL 17 HOUR),
+(1.35, 13.8, NOW() - INTERVAL 16 HOUR),
+(1.30, 13.5, NOW() - INTERVAL 15 HOUR),
+(1.25, 13.2, NOW() - INTERVAL 14 HOUR),
+(1.28, 13.4, NOW() - INTERVAL 13 HOUR),
+(1.32, 13.6, NOW() - INTERVAL 12 HOUR),
+(1.40, 14.1, NOW() - INTERVAL 11 HOUR),
+(1.45, 14.3, NOW() - INTERVAL 10 HOUR),
+(1.50, 14.5, NOW() - INTERVAL 9 HOUR),
+(1.53, 14.6, NOW() - INTERVAL 8 HOUR),
+(1.55, 14.9, NOW() - INTERVAL 7 HOUR),
+(1.62, 15.1, NOW() - INTERVAL 6 HOUR),
+(1.65, 15.3, NOW() - INTERVAL 5 HOUR),
+(1.60, 15.0, NOW() - INTERVAL 4 HOUR),
+(1.58, 14.8, NOW() - INTERVAL 3 HOUR),
+(1.55, 14.7, NOW() - INTERVAL 2 HOUR),
+(1.52, 14.5, NOW() - INTERVAL 1 HOUR),
+(1.50, 14.4, NOW());
+'''
+Pour creer la bdd et la remplir de valeurs 
+

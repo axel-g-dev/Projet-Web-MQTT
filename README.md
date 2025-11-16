@@ -1,4 +1,4 @@
-# Documentation technique : Installation et Configuration
+# Documentation technique : Installation et Configuration d'une VM 
 
 ## 1\. Préparation du système (Proxmox CT)
 

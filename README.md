@@ -705,7 +705,6 @@ Collez le code source :
 
 ## 5\. Lancement
 
-Construisez l'image et démarrez les conteneurs.
 
 ```bash
 docker-compose build
@@ -714,9 +713,9 @@ docker-compose up -d
 
 ## 6\. Initialisation de la Base de Données
 
-1.  Ouvrez votre navigateur à l'adresse : `http://ip_de_votre_vm:8081`
+1.  Ouvrez votre navigateur à l'adresse : `http://ip_vm:8081`
 2.  Identifiants : **root** / **ciel12000**
-3.  Allez dans l'onglet **SQL** et exécutez le script suivant :
+3.  Allez dans l'onglet **SQL** :
 
 <!-- end list -->
 
@@ -730,7 +729,7 @@ USE `surveillanceEauCanal`;
 -- --------------------------------------------------------
 -- 2. CRÉATION DE LA TABLE "1"
 -- --------------------------------------------------------
-DROP TABLE IF EXISTS `1`; -- On la supprime si elle existe pour repartir à neuf
+DROP TABLE IF EXISTS `1`; 
 CREATE TABLE `1` (
     `id` INT AUTO_INCREMENT PRIMARY KEY,
     `hauteurEau` DECIMAL(5,2) NOT NULL,
@@ -769,4 +768,4 @@ INSERT INTO `1` (`hauteurEau`, `temperatureEau`, `date_heure`) VALUES
 (1.50, 14.4, NOW());
 ```
 
-L'application est maintenant accessible sur `http://ip_de_votre_vm:8080`.
+L'application est maintenant accessible sur `http://ip_vm:8080`.

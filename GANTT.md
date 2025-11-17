@@ -1,5 +1,3 @@
-Voici une version réécrite, propre, claire et sans style “IA”. Tu pourras l’intégrer dans un GANTT ou un document de suivi sans souci.
-
 ---
 
 ## Suivi des tâches – 12/11/2025

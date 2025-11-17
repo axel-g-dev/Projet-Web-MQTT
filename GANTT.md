@@ -19,7 +19,7 @@ Fin de cette tache le 12/11/2025 à 16H30
 
 le 12/11/2025 à 16h35 :
 Création du docker-compose.yml
-- intégration de phpmyadmin, index.php et 
+- intégration de phpmyadmin, index.php
 
 
 

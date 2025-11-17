@@ -37,3 +37,5 @@ La tâche est finalisée à 16h30.
 
   * phpMyAdmin
   * index.php
+
+ Problème que j'ai rencontré : "deamon problem", cela semble être une erreur suite à la nouvelle mise à jour de docker, je devrais le vérifier lors de la prochaine séance. 

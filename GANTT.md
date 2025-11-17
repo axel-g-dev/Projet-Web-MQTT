@@ -1,5 +1,3 @@
----
-
 ## Suivi des tâches – 12/11/2025
 
 ### 15h50 – 16h30
@@ -39,8 +37,3 @@ La tâche est finalisée à 16h30.
 
   * phpMyAdmin
   * index.php
-
-
----
-
-Si tu veux, je peux t’aider à continuer à structurer la suite, ou à mettre ça sous forme de tableau GANTT.

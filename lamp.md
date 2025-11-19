@@ -1,7 +1,3 @@
-Absolument \! Voici le tutoriel complet et ajusté, incluant l'installation de **PhpMyAdmin** (comme dans votre configuration Docker originale) et la correction pour l'environnement sans Docker (Proxmox CT / Debian 12). J'ai ajouté des précisions pour chaque étape.
-
------
-
 ## 💻 Documentation Technique : Installation LAMP (MariaDB) sur Proxmox CT (Sans Docker)
 
 Ce guide détaille l'installation d'un environnement **L**inux, **A**pache, **M**ariaDB, **P**HP (LAMP) dans un conteneur (CT) Proxmox basé sur Debian 12, et le déploiement de votre application de surveillance.
@@ -256,4 +252,4 @@ exit
 | **Application Web** | `http://ip_vm/` | Lecture des données de la DB. |
 | **PhpMyAdmin** | `http://ip_vm/phpmyadmin` | **User:** `root` / **Pass:** `ciel12000` |
 
-Voulez-vous que je vous donne des commandes supplémentaires pour tester l'état de chaque service (Apache, MariaDB) ?
+

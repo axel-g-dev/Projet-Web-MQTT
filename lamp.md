@@ -36,24 +36,24 @@ mysql_secure_installation
 
 > **Actions recommandées lors de la sécurisation :**
 >
-> 1.  **Définissez le mot de passe ROOT** (Utilisez **`ciel12000`** pour la cohérence avec votre `docker-compose.yml` initial).
+> 1.  **Définissez le mot de passe ROOT** (Utilisez **`ciel12000.`** pour la cohérence avec votre `docker-compose.yml` initial).
 > 2.  Répondez par `y` aux questions pour supprimer les utilisateurs anonymes, interdire la connexion root à distance (par défaut, il n'écoute que sur `localhost`), supprimer la base de données de test et recharger les tables de privilèges.
 
 #### 2.2. Modification de l'Authentification (facultatif mais utile)
 
-Par défaut, Debian utilise un plugin d'authentification Unix Socket qui empêche la connexion en tant que `root` avec un mot de passe classique. Pour permettre à l'application et à PhpMyAdmin de se connecter en utilisant le mot de passe **`ciel12000`**, assurez-vous que l'utilisateur `root` utilise l'authentification standard par mot de passe.
+Par défaut, Debian utilise un plugin d'authentification Unix Socket qui empêche la connexion en tant que `root` avec un mot de passe classique. Pour permettre à l'application et à PhpMyAdmin de se connecter en utilisant le mot de passe **`ciel12000.`**, assurez-vous que l'utilisateur `root` utilise l'authentification standard par mot de passe.
 
 Connectez-vous à MariaDB :
 
 ```bash
 mysql -u root -p
-# Entrez ciel12000
+# Entrez ciel12000.
 ```
 
 Exécutez ces commandes pour forcer `root` à utiliser l'authentification par mot de passe pour les connexions TCP/IP (y compris `localhost`) :
 
 ```sql
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'ciel12000';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'ciel12000.';
 FLUSH PRIVILEGES;
 exit
 ```
@@ -73,7 +73,7 @@ Lors de l'installation, vous serez invité à faire des choix :
 
 1.  **Serveur web à reconfigurer :** Sélectionnez **`apache2`** (Appuyez sur **`Espace`** pour sélectionner, puis **`Entrée`**).
 2.  **Configurer la base de données pour phpmyadmin avec dbconfig-common :** Répondez **`Yes`**.
-3.  **Mot de passe de l'administrateur de la base de données (MariaDB root) :** Entrez **`ciel12000`**.
+3.  **Mot de passe de l'administrateur de la base de données (MariaDB root) :** Entrez **`ciel12000.`**.
 4.  **Mot de passe d'application de phpmyadmin :** Laissez vide pour qu'il soit généré ou définissez-en un.
 
 PhpMyAdmin est maintenant accessible sur : `http://ip_vm/phpmyadmin`
@@ -81,7 +81,7 @@ PhpMyAdmin est maintenant accessible sur : `http://ip_vm/phpmyadmin`
 > **Connexion PhpMyAdmin :**
 >
 >   * **Utilisateur :** `root`
->   * **Mot de passe :** `ciel12000`
+>   * **Mot de passe :** `ciel12000.`
 
 -----
 
@@ -750,7 +750,7 @@ Pour remplir la base de données avec les données de démonstration, connectez-
 
 ```bash
 mysql -u root -p
-# Entrez ciel12000
+# Entrez ciel12000.
 ```
 
 Collez et exécutez le script SQL original :
@@ -817,6 +817,6 @@ exit
 | Service | Accès (Remplacez `ip_vm` par l'IP de votre conteneur) | Détails de Connexion |
 | :--- | :--- | :--- |
 | **Application Web** | `http://ip_vm/` | Lecture des données de la DB. |
-| **PhpMyAdmin** | `http://ip_vm/phpmyadmin` | **User:** `root` / **Pass:** `ciel12000` |
+| **PhpMyAdmin** | `http://ip_vm/phpmyadmin` | **User:** `root` / **Pass:** `ciel12000.` |
 
 

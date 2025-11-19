@@ -44,5 +44,19 @@ La tâche est finalisée à 16h30.
 ---
 ## Suivi des tâches – 19/11/2025
 
+De 14H00 à 15H30 : 
 Création d'une nouvelle VM, suite au problème de la màj de docker. 
 Création de la vm, puisque supprimée lors de la refonte du serveur bts2
+
+J'ai rencontré des erreurs suite à la dernière màj de docker : 
+ - j'ai essayé de faire une vm avec mysql
+ - une autre avec mariadb
+ Cette erreur précisémment : "Error response from daemon: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: open sysctl net.ipv4.ip_unprivileged_port_start file: reopen fd 8: permission denied"
+
+Ces VMs m'ont fait perdre du temps.
+
+Suite à cela, j'ai voulu déployer une bdd mariadb et un site sans passer par docker.
+
+J'ai réalisé une installation via lamp.
+
+

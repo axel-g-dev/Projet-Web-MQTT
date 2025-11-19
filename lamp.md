@@ -116,7 +116,7 @@ Collez-y le contenu suivant :
 <VirtualHost *:80>
     ServerAdmin webmaster@localhost
     DocumentRoot /var/www/surveillance
-    ServerName surveillance.local # Optionnel, pour usage interne
+    ServerName surveillance.local
     
     <Directory /var/www/surveillance>
         Options Indexes FollowSymLinks

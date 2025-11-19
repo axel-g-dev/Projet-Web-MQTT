@@ -708,7 +708,7 @@ Collez le code source :
 
 ```bash
 docker-compose build
-docker-compose up -d
+docker-compose up -d // ici et haut dessus enlever les espaces 
 ```
 
 ## 6\. Initialisation de la Base de Données

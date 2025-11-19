@@ -39,3 +39,10 @@ La tâche est finalisée à 16h30.
   * index.php
 
  Problème que j'ai rencontré : "deamon problem", cela semble être une erreur suite à la nouvelle mise à jour de docker, je devrais le vérifier lors de la prochaine séance. 
+
+
+---
+## Suivi des tâches – 19/11/2025
+
+Création d'une nouvelle VM, suite au problème de la màj de docker. 
+Création de la vm, puisque supprimée lors de la refonte du serveur bts2

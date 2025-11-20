@@ -1,6 +1,6 @@
-## 💻 Documentation Technique : Installation LAMP (MariaDB) sur Proxmox CT (Sans Docker)
+## 💻 Documentation Technique : Installation LAMP (MariaDB) sur Proxmox CT
 
-Ce guide détaille l'installation d'un environnement **L**inux, **A**pache, **M**ariaDB, **P**HP (LAMP) dans un conteneur (CT) Proxmox basé sur Debian 12, et le déploiement de votre application de surveillance.
+Ce guide détaille l'installation d'un environnement **L**inux, **A**pache, **M**ariaDB, **P**HP (LAMP) dans un conteneur (CT) Proxmox basé sur Debian 12, et le déploiement de d'application de surveillance.
 
 ### 1\. Préparation du Système et Installation des Composants LAMP 🛠️
 

@@ -1,5 +1,3 @@
-Voici le protocole de validation strict pour votre documentation, adapté avec l'adresse IP 172.40.1.243.
-
 # Protocole de Validation : Installation LAMP & Surveillance
 
 **Cible :** VM Proxmox (Debian 12)

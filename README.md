@@ -417,7 +417,7 @@ Collez le code source :
         $host = 'db';
         $dbname = 'surveillanceEauCanal';
         $username = 'root';
-        $password = 'ciel12000';
+        $password = 'ciel12000.';
 
         try {
             $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
@@ -714,7 +714,7 @@ docker compose up -d
 ## 6\. Initialisation de la Base de Données
 
 1.  Ouvrez votre navigateur à l'adresse : `http://ip_vm:8081`
-2.  Identifiants : **root** / **ciel12000**
+2.  Identifiants : **root** / **ciel12000.**
 3.  Allez dans l'onglet **SQL** :
 
 <!-- end list -->

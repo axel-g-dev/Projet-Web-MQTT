@@ -1,7 +1,7 @@
 # Protocole de Validation : Installation LAMP & Surveillance
 
 **Cible :** CT Proxmox (Debian 12)
-**Adresse IP :** 172.40.1.243
+**Adresse IP :** votre_ip
 **Prérequis :** Accès SSH (root) sur la CT et navigateur web sur le poste client.
 
 ### 1\. Vérification de l'Installation Système
@@ -41,7 +41,7 @@ Objectif : Valider l'authentification et la configuration du plugin (Étape 2 du
 
 Objectif : Valider l'accès à l'outil d'administration (Étape 3 du guide).
 
-  * **Accès HTTP :** Naviguer vers `http://172.40.1.243/phpmyadmin`
+  * **Accès HTTP :** Naviguer vers `http://votre_ip/phpmyadmin`
   * **Test de connexion :**
       * Utilisateur : `root`
       * Mot de passe : `ciel12000.`
@@ -76,7 +76,7 @@ Objectif : Confirmer l'exécution du script SQL et la présence des données (É
 
 Objectif : Valider le rendu final de l'application (Étape 6 du guide).
 
-  * **Accès Application :** Ouvrir `http://172.40.1.243/`
+  * **Accès Application :** Ouvrir `http://votre_ip/`
   * **Points de contrôle visuels :**
     1.  Le titre "Surveillance Eau Canal" est affiché.
     2.  Les cartes de statistiques (Hauteur Actuelle, Température, etc.) affichent des valeurs numériques et non des erreurs PHP.

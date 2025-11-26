@@ -47,17 +47,17 @@ mysql_secure_installation
 >
 > Répondez aux invites comme suit :
 
-Switch to unix_socket authentication : n
+> Switch to unix_socket authentication : n
 
-Change the root password : n (Si demandé, définir sur ciel12000.)
+> Change the root password : n (Si demandé, définir sur ciel12000.)
 
-Remove anonymous users : Y
+> Remove anonymous users : Y
 
-Disallow root login remotely : Y
+> Disallow root login remotely : Y
 
-Remove test database and access to it : Y
+> Remove test database and access to it : Y
 
-Reload privilege tables now : Y
+> Reload privilege tables now : Y
 
 #### 2.2. Modification de l'Authentification (facultatif mais utile)
 

@@ -45,8 +45,19 @@ mysql_secure_installation
 
 > **Actions recommandées lors de la sécurisation :**
 >
-> 1.  **Définissez le mot de passe ROOT** (Utilisez **`ciel12000.`** pour la cohérence avec votre `docker-compose.yml` initial).
-> 2.  Répondez par `y` aux questions pour supprimer les utilisateurs anonymes, interdire la connexion root à distance (par défaut, il n'écoute que sur `localhost`), supprimer la base de données de test et recharger les tables de privilèges.
+> Répondez aux invites comme suit :
+
+Switch to unix_socket authentication : n
+
+Change the root password : n (Si demandé, définir sur ciel12000.)
+
+Remove anonymous users : Y
+
+Disallow root login remotely : Y
+
+Remove test database and access to it : Y
+
+Reload privilege tables now : Y
 
 #### 2.2. Modification de l'Authentification (facultatif mais utile)
 

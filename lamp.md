@@ -1,10 +1,10 @@
 ## 💻 Documentation Technique : Installation LAMP (MariaDB) sur Proxmox CT
 
-Ce guide détaille l'installation d'un environnement **L**inux, **A**pache, **M**ariaDB, **P**HP (LAMP) dans un conteneur (CT) Proxmox basé sur Debian 12, et le déploiement de d'application de surveillance.
+Ce guide détaille l'installation d'un environnement **Linux**, **Apache**, **MariaDB**, **PHP** (LAMP) dans un conteneur (CT) Proxmox basé sur Debian 12, et le déploiement de d'application de surveillance.
 
 Création de la CT dans proxmox, copiez les éléments suivants :
 
-- IP Fixe
+- IP Fixe (testez un ping sur windows pour vous assurer que vous n'écrasez pas une IP)
 - 2 coeurs
 - ram : 512 mb
 - stockage : 10 Gb
@@ -47,9 +47,9 @@ mysql_secure_installation
 >
 > Répondez aux invites comme suit :
 
-> Switch to unix_socket authentication : n
+> Switch to unix_socket authentication : N
 
-> Change the root password : n (Si demandé, définir sur ciel12000.)
+> Change the root password : Y --> définir sur ciel12000.)
 
 > Remove anonymous users : Y
 
@@ -152,13 +152,16 @@ Activez la nouvelle configuration et désactivez celle par défaut (pour que vot
 ```bash
 # Activation du nouveau site
 a2ensite surveillance.conf
-
+```
+```bash
 # Désactivation du site par défaut (si vous n'en avez pas besoin)
 a2dissite 000-default.conf
-
+```
+```bash
 # Activation du module rewrite (nécessaire pour la bonne pratique)
 a2enmod rewrite
-
+```
+```bash
 # Redémarrage d'Apache
 systemctl restart apache2
 ```

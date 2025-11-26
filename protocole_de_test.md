@@ -1,8 +1,8 @@
 # Protocole de Validation : Installation LAMP & Surveillance
 
-**Cible :** VM Proxmox (Debian 12)
+**Cible :** CT Proxmox (Debian 12)
 **Adresse IP :** 172.40.1.243
-**Prérequis :** Accès SSH (root) sur la VM et navigateur web sur le poste client.
+**Prérequis :** Accès SSH (root) sur la CT et navigateur web sur le poste client.
 
 ### 1\. Vérification de l'Installation Système
 

@@ -2,6 +2,15 @@
 
 Ce guide détaille l'installation d'un environnement **L**inux, **A**pache, **M**ariaDB, **P**HP (LAMP) dans un conteneur (CT) Proxmox basé sur Debian 12, et le déploiement de d'application de surveillance.
 
+Création de la CT dans proxmox, copiez les éléments suivants :
+
+- IP Fixe
+- 2 coeurs
+- ram : 512 mb
+- stockage : 10 Gb
+- carte réseau : vmbr0
+
+
 ### 1\. Préparation du Système et Installation des Composants LAMP 🛠️
 
 Connectez-vous à votre conteneur Proxmox et installez les paquets de base.

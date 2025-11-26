@@ -43,8 +43,8 @@ Exécutez le script de sécurisation.
 mysql_secure_installation
 ```
 
-> **Actions recommandées lors de la sécurisation :**
->
+**Actions recommandées lors de la sécurisation :**
+
 > Répondez aux invites comme suit :
 
 > Switch to unix_socket authentication : N

@@ -1,4 +1,4 @@
-## 💻 Documentation Technique : Installation LAMP (MariaDB) sur Proxmox CT
+## Documentation Technique : Installation LAMP (MariaDB) sur Proxmox CT
 
 Ce guide détaille l'installation d'un environnement **Linux**, **Apache**, **MariaDB**, **PHP** (LAMP) dans un conteneur (CT) Proxmox basé sur Debian 12, et le déploiement de d'application de surveillance.
 
@@ -11,7 +11,7 @@ Création de la CT dans proxmox, copiez les éléments suivants :
 - carte réseau : vmbr0
 
 
-### 1\. Préparation du Système et Installation des Composants LAMP 🛠️
+### 1\. Préparation du Système et Installation des Composants LAMP 
 
 Connectez-vous à votre conteneur Proxmox et installez les paquets de base.
 
@@ -31,7 +31,7 @@ apt install sudo nano wget curl apache2 mariadb-server php libapache2-mod-php ph
 
 -----
 
-### 2\. Configuration et Sécurisation de MariaDB 🔐
+### 2\. Configuration et Sécurisation de MariaDB 
 
 Nous allons sécuriser l'installation de MariaDB et préparer l'accès.
 
@@ -80,7 +80,7 @@ exit
 
 -----
 
-### 3\. Installation et Accès à PhpMyAdmin (Facultatif) 🖥️
+### 3\. Installation et Accès à PhpMyAdmin (Facultatif) 
 
 Pour remplacer le service `phpmyadmin` de votre ancienne configuration Docker, installez-le directement sur le CT.
 
@@ -105,7 +105,7 @@ PhpMyAdmin est maintenant accessible sur : `http://ip_vm/phpmyadmin`
 
 -----
 
-### 4\. Configuration d'Apache et Déploiement du Code 🌐
+### 4\. Configuration d'Apache et Déploiement du Code 
 
 Nous allons configurer le Virtual Host pour servir votre application et y placer le code corrigé.
 
@@ -166,7 +166,7 @@ a2enmod rewrite
 systemctl restart apache2
 ```
 
-#### 4.4. Création du Fichier `index.php` (Corrigé)
+#### 4.4. Création du Fichier `index.php` 
 
 Créez le fichier `index.php` dans le nouveau répertoire (`/var/www/surveillance`).
 
@@ -767,7 +767,7 @@ chmod -R 755 /var/www/surveillance
 
 -----
 
-### 5\. Initialisation de la Base de Données (SQL) 💾
+### 5\. Initialisation de la Base de Données (SQL) 
 
 Pour remplir la base de données avec les données de démonstration, connectez-vous à la console MariaDB une dernière fois (ou utilisez PhpMyAdmin à l'étape suivante).
 
@@ -835,7 +835,7 @@ exit
 
 -----
 
-### 6\. Accès aux Interfaces ✔️
+### 6\. Accès aux Interfaces 
 
 | Service | Accès (Remplacez `ip_vm` par l'IP de votre conteneur) | Détails de Connexion |
 | :--- | :--- | :--- |

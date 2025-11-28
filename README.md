@@ -17,10 +17,3 @@ Ce dépôt contient les fichiers liés au développement et au déploiement du p
 
 ---
 
-Si tu veux, je peux aussi :
-
-* rendre le README plus détaillé,
-* ajouter un plan, une description du contexte,
-* ajouter une section installation / utilisation.
-
-Dis-moi ce que tu préfères.

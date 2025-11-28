@@ -1,5 +1,3 @@
-Voici une proposition de **README.md simple et minimaliste**, contenant uniquement l’essentiel et des liens vers les fichiers présents dans ton dépôt GitHub.
-
 # Projet Web MQTT
 
 Ce dépôt contient les fichiers liés au développement et au déploiement du projet Web MQTT.

@@ -1,9 +1,5 @@
 Voici une proposition de **README.md simple et minimaliste**, contenant uniquement l’essentiel et des liens vers les fichiers présents dans ton dépôt GitHub.
 
-Tu pourras copier-coller tel quel dans ton README.md :
-
----
-
 # Projet Web MQTT
 
 Ce dépôt contient les fichiers liés au développement et au déploiement du projet Web MQTT.

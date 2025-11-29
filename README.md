@@ -15,5 +15,4 @@ Ce dépôt contient les fichiers liés au développement et au déploiement du p
 
 * [index.php](https://github.com/axel-g-dev/Projet-Web-MQTT/blob/main/index.php) – Code principal de l’interface web
 
----
 

@@ -1,4 +1,24 @@
-## Bilan du Suivi de Projet : Déploiement d'une Solution Web et BDD
+# GANTT de mon projet MQTT : 
+
+| Tâche                                    | Début      | Fin        | Durée (minutes) | Commentaire                         |
+| ---------------------------------------- | ---------- | ---------- | --------------- | ----------------------------------- |
+| Création de la VM Debian                 | 12/11/2025 | 12/11/2025 | 40              | VM préparée pour Docker             |
+| Installation de Docker                   | 12/11/2025 | 12/11/2025 | 20              | Docker installé et testé            |
+| Configuration Docker Compose             | 12/11/2025 | 12/11/2025 | 20              | Début de configuration              |
+| Analyse des erreurs Docker               | 19/11/2025 | 19/11/2025 | 60              | Analyse des erreurs MySQL/MariaDB   |
+| Recréation de la VM                      | 19/11/2025 | 19/11/2025 | 30              | Ancienne VM supprimée               |
+| Décision d’abandonner Docker             | 19/11/2025 | 19/11/2025 | 10              | Orientation vers LAMP               |
+| Installation LAMP (Apache, PHP, MariaDB) | 19/11/2025 | 19/11/2025 | 60              | Serveur LAMP opérationnel           |
+| Développement du site — connexion BDD    | 19/11/2025 | 19/11/2025 | 60              | `index.php` fonctionnel             |
+| Intégration Chart.js + tableaux          | 26/11/2025 | 26/11/2025 | 80              | Graphiques testés avec BDD factice  |
+| Finalisation de la VM LAMP               | 26/11/2025 | 26/11/2025 | 40              | Vérifications globales              |
+| Documentation et fiche de test           | 26/11/2025 | 26/11/2025 | 60              | Documentation rédigée               |
+| Intégration de la BDD finale (à faire)   | 03/12/2025 | 03/12/2025 | 30  (prévision) | Dépend de la finalisation par Louna |
+
+
+
+
+## Bilan du Suivi de Projet : Déploiement Web et BDD
 
 Ce document retrace les étapes de mise en place d'une infrastructure pour héberger une page web et une base de données de surveillance, incluant les problèmes rencontrés et les solutions implémentées.
 

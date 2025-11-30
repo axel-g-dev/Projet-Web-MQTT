@@ -5,7 +5,6 @@ Ce dépôt contient les fichiers liés au développement et au déploiement du p
 ## Documentation du projet
 
 * [GANTT.md](https://github.com/axel-g-dev/Projet-Web-MQTT/blob/main/GANTT.md) – Suivi du déploiement de la solution web
-* [gantt.html](https://github.com/axel-g-dev/Projet-Web-MQTT/blob/main/gantt.html) – Version HTML du diagramme de Gantt
 * [README.md](https://github.com/axel-g-dev/Projet-Web-MQTT/blob/main/README.md) – Présentation du projet
 * [lamp.md](https://github.com/axel-g-dev/Projet-Web-MQTT/blob/main/lamp.md) – Documentation du serveur LAMP
 * [outils.md](https://github.com/axel-g-dev/Projet-Web-MQTT/blob/main/outils.md) – Outils utilisés

@@ -79,14 +79,44 @@ try {
 ?>
 ```
 
------
+---
+
+### Session du 26/11/2025 (14h00 – 17h00)
+
+#### Intégration des graphiques et finalisation de la VM LAMP
+
+* **Ajout de fonctionnalités dans `index.php`** :
+
+  * Intégration de Chart.js pour afficher des graphiques basés sur les données (valeurs moyennes, évolution des mesures).
+  * Création et test d’un tableau récapitulatif et d’un premier graphique utilisant des données factices.
+
+* **Finalisation de l’environnement LAMP** :
+
+  * Stabilisation de la VM (Apache, PHP, MariaDB).
+  * Vérification du fonctionnement global du site.
+
+* **Documentation** :
+
+  * Rédaction de la documentation du projet et de la fiche de test associée.
+
+* **Blocage restant** :
+
+  * La base de données finale n’étant pas encore terminée (travail en attente de Louna), le site est temporairement connecté à une BDD factice.
+  * Prochaine étape : intégrer la base définitive et adapter les requêtes SQL.
+
+---
 
 ### Synthèse des Progrès
 
-| Élément | État Actuel | Commentaires |
-| :--- | :--- | :--- |
-| **VM/CT Hôte** | Finalisé | Conteneur (CT) avec installation Debian. |
-| **Conteneurisation (Docker)** | Bloqué | Problèmes de permissions suite à la mise à jour; approche abandonnée. |
-| **Base de Données** | Finalisé | MariaDB installé nativement via LAMP. |
-| **Serveur Web** | Finalisé | Apache (dans le cadre de LAMP). |
-| **Affichage Web (PHP)** | Finalisé | Connexion BDD et affichage des données fonctionnels. |
+| Élément                     | État Actuel | Commentaires                                                            |
+| --------------------------- | ----------- | ----------------------------------------------------------------------- |
+| VM/CT Hôte                  | Finalisé    | VM Debian avec LAMP opérationnelle.                                     |
+| Conteneurisation (Docker)   | Abandonné   | Problèmes de permissions persistants.                                   |
+| Base de Données             | En cours    | MariaDB installée mais la BDD finale doit être intégrée.                |
+| Serveur Web                 | Finalisé    | Apache configuré.                                                       |
+| Affichage Web (Tableau PHP) | Finalisé    | Affichage des données fonctionnel.                                      |
+| Affichage Web (Graphiques)  | En cours    | Chart.js intégré dans `index.php`, tests réalisés sur données factices. |
+| Documentation & Tests       | Finalisé    | Documentation projet et fiche de test rédigées.                         |
+
+---
+
